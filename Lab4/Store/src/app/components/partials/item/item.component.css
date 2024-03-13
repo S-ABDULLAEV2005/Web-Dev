@@ -42,14 +42,14 @@
 .items a.item-link {
   height: 20%;
   color: gray; 
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   text-align: center;
   margin: 20px;
 }
 
 
 .items a.item-link:hover {
-  text-decoration: underline; /* Example hover underline */
+  text-decoration: underline; 
 }
   
   .fa-star {
@@ -60,6 +60,7 @@
     background-color: #3498db;
     color: #fff;
     border: none;
+    
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
