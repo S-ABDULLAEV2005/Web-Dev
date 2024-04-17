@@ -1,0 +1,18 @@
+<p>vacancy works!</p>
+
+
+<!-- vacancy.component.html -->
+<!-- vacancy.component.html -->
+<div *ngIf="vacancies && vacancies.length > 0">
+    <h2>Vacancies</h2>
+    <div class="vacancy-card" *ngFor="let vacancy of vacancies" (click)="getVacancyDetails(vacancy.id)">
+      <h3>{{ vacancy.name }}</h3>
+      <p>{{ vacancy.description }}</p>
+      <p>Salary: {{ vacancy.salary }}</p>
+      <p>Company: {{ vacancy.company.name }}</p>
+    </div>
+  </div>
+  <div *ngIf="!vacancies || vacancies.length === 0">
+    <p>No vacancies available.</p>
+  </div>
+  

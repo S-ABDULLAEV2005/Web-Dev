@@ -1,0 +1,13 @@
+<!-- company.component.html -->
+<p>the company list work</p>
+
+
+
+<a *ngFor="let company of companies" [routerLink]="['/vacancy', company.id]">
+  <div class="company-card">
+    <h2>{{ company.name }}</h2>
+    <p>{{ company.description }}</p>
+    <p>City: {{ company.city }}</p>
+    <p>Address: {{ company.address }}</p>
+  </div>
+</a>
